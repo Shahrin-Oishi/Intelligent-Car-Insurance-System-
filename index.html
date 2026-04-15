@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Advanced Car Insurance System</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Intelligent Car Insurance</h1>
+        <p>Advanced Risk-Based Premium Calculator</p>
+        
+        <input type="text" id="ownerName" placeholder="Owner Name">
+        
+        <label>Vehicle Type:</label>
+        <select id="carType">
+            <option value="1.0">Sedan / Standard</option>
+            <option value="1.5">SUV / Off-road</option>
+            <option value="2.5">Luxury / Sports</option>
+        </select>
+
+        <input type="number" id="carAge" placeholder="Car Age (Years)">
+
+        <label>Has Anti-Theft System?</label>
+        <select id="safety">
+            <option value="0.9">Yes (10% Discount)</option>
+            <option value="1.0">No</option>
+        </select>
+
+        <button onclick="calculateAdvanced()">Calculate Premium</button>
+        
+        <div id="result"></div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
