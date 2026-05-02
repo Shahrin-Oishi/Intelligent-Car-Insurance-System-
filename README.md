@@ -1,6 +1,6 @@
 # 🚗 Intelligent Car Insurance System 🚗
 
-## 📌 About Project
+##  About Project
 This is a simple web project that calculates car insurance cost based on vehicle type, age of car and safety features.
 
 
