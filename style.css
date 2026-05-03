@@ -1,45 +1,66 @@
 body {
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    background-color: #f4f7f6;
+    font-family: Arial;
+    background: linear-gradient(135deg, #74ebd5, #acb6e5);
     display: flex;
     justify-content: center;
     align-items: center;
     height: 100vh;
     margin: 0;
+    transition: 0.3s;
 }
+
 .container {
     background: white;
-    padding: 30px;
+    padding: 25px;
     border-radius: 12px;
-    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
-    width: 400px;
+    width: 90%;
+    max-width: 400px;
     text-align: center;
+    animation: fadeIn 0.6s ease;
 }
-h1 { color: #2c3e50; margin-bottom: 5px; }
-p { color: #7f8c8d; margin-bottom: 20px; font-size: 14px; }
-.form-group { margin-bottom: 15px; text-align: left; }
-input, select {
+
+input, select, button {
     width: 100%;
     padding: 10px;
+    margin: 8px 0;
+    border-radius: 6px;
     border: 1px solid #ddd;
-    border-radius: 6px;
-    box-sizing: border-box;
 }
+
+input:focus {
+    border-color: #3498db;
+    outline: none;
+    box-shadow: 0 0 5px rgba(52,152,219,0.5);
+}
+
 button {
-    background-color: #3498db;
+    background: #3498db;
     color: white;
-    border: none;
-    padding: 12px;
-    width: 100%;
-    border-radius: 6px;
     cursor: pointer;
-    font-size: 16px;
+    border: none;
 }
-button:hover { background-color: #2980b9; }
+
+button:hover {
+    background: #2980b9;
+}
+
 .quote-box {
-    margin-top: 20px;
+    background: #eef7ff;
     padding: 15px;
-    background-color: #e8f4fd;
+    margin-top: 15px;
     border-left: 5px solid #3498db;
     text-align: left;
+}
+
+
+
+
+.dark .container {
+    background: #2c2c2c;
+}
+
+
+@keyframes fadeIn {
+    from {opacity: 0; transform: translateY(10px);}
+    to {opacity: 1;}
 }
